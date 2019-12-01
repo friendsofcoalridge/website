@@ -131,7 +131,9 @@
                       <div>
                         <div class="date">{{post.date | date: '%B %d, %Y'}}</div>
                         <div class="title">{{post.title}}</div>
-                        <a rel="nofollow" class="sermon-download" href="{{post.download}}">Listen</a>
+                        <audio src="{{post.download}}" preload="auto" controls="">
+                          <em>Your browser does not support the audio element.</em>
+                        </audio>
                       </div>
                       {% endfor %}
                     </p>
