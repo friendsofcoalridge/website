@@ -379,7 +379,14 @@ img {
 .bg-cover {
     background-repeat: no-repeat;
     background-position: 50%;
-    background-size: cover
+    background-size: cover;
+    background-image: url(../img/sermons-sm.png);
+}
+
+@media (min-width: 1030px) {
+  .bg-cover {
+    background-image: url(../img/sermons.png);
+  }
 }
 
 .bg-cover,
