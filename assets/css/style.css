@@ -142,13 +142,19 @@ img {
 }
 
 
+#aboutone {
+  padding-top: 5rem;
+}
+
 .section {
     position: relative;
     padding: 3rem 0;
+    padding-bottom: 1rem;
 }
 @media (min-width:768px) {
     .section {
         padding: 4rem 0
+        padding-bottom: 1rem 0
     }
 }
 
