@@ -117,7 +117,7 @@
                     <p class="mb-5">
                       {% if site.posts != empty %}
                         {% for post in site.posts %}
-                        <div>
+                        <div class="pb-5">
                           <div class="date">{{post.date | date: '%B %d, %Y'}}</div>
                           <div class="title">{{post.title}}</div>
                           <audio src="{{post.download}}" preload="auto" controls="">
