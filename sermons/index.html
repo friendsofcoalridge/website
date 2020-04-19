@@ -107,7 +107,6 @@
         <div class="container">
             <div class="row justify-content-center mb-4">
                 <div class="col-md-8 col-lg-7 text-center">
-
                     <!-- Heading -->
                     <h2 class="lg-title mb-2 pb-3">
                         Sermons
@@ -115,21 +114,16 @@
 
                     <!-- Subheading -->
                     <p class="mb-5">
-                      {% if site.posts != empty %}
-                        {% for post in site.posts %}
-                        <div class="pb-5">
-                          <div class="date">{{post.date | date: '%B %d, %Y'}}</div>
-                          <div class="title">{{post.title}}</div>
-                          <audio src="{{post.download}}" preload="auto" controls="">
-                            <em>Your browser does not support the audio element.</em>
-                          </audio>
-                        </div>
-                        {% endfor %}
-                      {% else %}
-                        Coming January 2020
-                      {% endif %}
+                      {% for post in paginator.posts %}
+                      <div class="pb-5">
+                        <div class="date">{{post.date | date: '%B %d, %Y'}}</div>
+                        <div class="title">{{post.title}}</div>
+                        <audio src="{{post.download}}" preload="auto" controls="">
+                          <em>Your browser does not support the audio element.</em>
+                        </audio>
+                      </div>
+                      {% endfor %}
                     </p>
-
                 </div>
             </div>
         </div>

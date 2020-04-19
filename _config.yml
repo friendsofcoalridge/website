@@ -3,3 +3,6 @@ email: friendsofcoalridge@yahoo.com
 description: "website for Coalridge Church"
 url: "https://friendsofcoalridge.org"
 redirects: yes
+paginate: 5
+paginate_path: "/sermons/page/:num/"
+paginator_path: "/sermons/page/:num"
