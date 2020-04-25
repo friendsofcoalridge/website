@@ -1,0 +1,59 @@
+---
+layout: none
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:cc="http://web.resource.org/cc/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" version="2.0">
+  <channel>
+    <atom:link href="https://friendsofcoalridge.org/rss" rel="self" type="application/rss+xml"/>
+    <title>Friends of Coalridge</title>
+    <pubDate>Sat, 08 Feb 2020 00:45:16 +0000</pubDate>
+    <lastBuildDate>Sat, 25 Apr 2020 02:54:43 +0000</lastBuildDate>
+    <generator>Libsyn WebEngine 2.0</generator>
+    <link>https://friendsofcoalridge.org/</link>
+    <language>en</language>
+    <copyright><![CDATA[]]></copyright>
+    <docs>https://friendsofcoalridge.org/</docs>
+    <managingEditor>friendsofcoalridge@yahoo.com (friendsofcoalridge@yahoo.com)</managingEditor>
+    <itunes:summary><![CDATA[Sermons From Coal Ridge Church]]></itunes:summary>
+    <image>
+      <url>https://friendsofcoalridge.org/assets/img/rss/podcast.png</url>
+      <title>Friends of Coalridge</title>
+      <link><![CDATA[https://friendsofcoalridge.org/]]></link>
+    </image>
+    <itunes:author>Todd Rowland</itunes:author>
+    <itunes:keywords>sermons</itunes:keywords>
+    <itunes:category text="Christianity">
+      <itunes:category text="Sermons"/>
+    </itunes:category>
+    <itunes:image href="https://friendsofcoalridge.org/assets/img/rss/podcast.png"/>
+    <itunes:explicit>clean</itunes:explicit>
+    <itunes:owner>
+      <itunes:name><![CDATA[Todd Rowland]]></itunes:name>
+      <itunes:email>friendsofcoalridge@yahoo.com</itunes:email>
+    </itunes:owner>
+    <description><![CDATA[Sermons From Coal Ridge Church]]></description>
+    <itunes:subtitle><![CDATA[]]></itunes:subtitle>
+    <itunes:type>episodic</itunes:type>
+    {% for post in site.posts %}
+    <item>
+      <title>{{ post.title | xml_escape }}</title>
+      <itunes:title>{{ post.title | xml_escape }}</itunes:title>
+      <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+      <guid isPermaLink="false">{{ site.url }}{{ post.url }}</guid>
+      <link><![CDATA[{{ site.url }}{{ post.url }}]]></link>
+      <itunes:image href="https://friendsofcoalridge.org/assets/img/rss/podcast.png"/>
+      <description><![CDATA[description goes here]]></description>
+      <content:encoded><![CDATA[{{ post.title | xml_escape }}]]></content:encoded>
+      <enclosure length="27482751" type="audio/mpeg" url="{{post.download}}"/>
+      <itunes:duration>30:00</itunes:duration>
+      <itunes:explicit>clean</itunes:explicit>
+      <itunes:keywords/>
+      <itunes:subtitle/>
+      <itunes:season/>
+      <itunes:episode/>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Friends of Coal Ridge</itunes:author>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>
