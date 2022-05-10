@@ -21,27 +21,18 @@
   <script defer src="assets/js/theme.js" async></script>
 </head>
 <body id="page-top">
-
-    <!-- NAVBAR
-    ================================================= -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-togglable  fixed-top " id="mainNav">
         <div class="container">
-
-            <!-- Brand -->
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <h2>Coal Ridge Church & Museum</h2>
             </a>
-
-            <!-- Toggler -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon-bar">
                     <i class="fa fa-bars"></i>
                 </span>
             </button>
 
-            <!-- Collapse -->
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <!-- Links -->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="/">
@@ -65,20 +56,12 @@
                     </li>
                 </ul>
             </div>
-            <!-- / .navbar-collapse -->
         </div>
-        <!-- / .container -->
     </nav>
 
-    <!-- HERO
-    ================================================== -->
     <section class="section section-top section-full">
-        <!-- Cover -->
         <div class="bg-cover"></div>
-
-        <!-- Overlay -->
         <div class="bg-overlay"></div>
-        <!-- Content -->
         <div class="container">
             <div class="row justify-content-center align-items-center">
                 <div class="col-md-10 col-lg-7 ">
@@ -96,54 +79,61 @@
                     </div>
                 </div>
             </div>
-            <!-- / .row -->
         </div>
-        <!-- / .container -->
     </section>
 
-    <!-- SECTIONS
-    ================================================== -->
-    <!-- PAGES
-    ================================================== -->
-
-    <!-- FEATURES
-    ================================================== -->
-    <section class="section" id="service">
+    <section class="section" id="aboutone">
         <div class="container">
             <div class="row justify-content-center mb-4">
-                <div class="col-md-8 col-lg-7 text-center">
+                <div class="col-lg-12 text-left">
+                    <h2 class="lg-title mb-2 pb-3">COAL RIDGE CHURCH WEDDING POLICY</h2>
 
-                    <p class="mb-5">
-                      <a href="/podcast">Link for podcast apps</a>
-                    </p>
-
-                    <!-- Heading -->
-                    <h2 class="lg-title mb-2 pb-3">
-                        Sermons
-                    </h2>
-
-                    <!-- Subheading -->
-                    <p class="mb-5">
-                      {% if site.posts != empty %}
-                        {% for post in site.posts %}
-                        <div class="pb-5">
-                          <div class="date">{{post.date | date: '%B %d, %Y'}}</div>
-                          <div class="title">{{post.title}}</div>
-                          <audio src="{{post.download}}" preload="none" controls="">
-                            <em>Your browser does not support the audio element.</em>
-                          </audio>
-                        </div>
-                        {% endfor %}
-                      {% else %}
-                        Coming January 2020
-                      {% endif %}
-                    </p>
-
+                    <p class="mb-3">Congratulations!   Your wedding is an exciting and joyful event.   We realize this is a very important day for you.   Please read the following policy carefully so you fully understand the expectations and agreements.   You may have questions and concerns—-if so, please contact ________ at ________.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="section" id="abouttwo">
+        <div class="container">
+            <div class="row justify-content-center mb-4">
+                <div class="col-lg-12 text-left">
+                    <h2 class="lg-title mb-2 pb-3">General Guidelines</h2>
+
+                    <p class="mb-5">You will be assessed a $150.00 rental fee and a refundable Security deposit of $150 to reserve the church. The security deposit covers the church property, building and contents for possible repairs, reorganization or cleaning that goes beyond what would be considered as normal. If the church is returned to the same condition as before the wedding, all security deposits will be returned.  All payments are 90% refundable up to two weeks prior to the scheduled date of the ceremony.</p>
+
+                    <h3 style="font-size: 38px" class="lg-title mb-2">General</h3>
+
+                    <ul class="pb-5">
+                        <li>Maximum occupancy 110</li>
+                        <li>Smoking, drinking of alcoholic beverages, or the use of illicit drugs in the parking lot or anywhere on church property is strictly prohibited. If evidence of such activity is found or observed, the damage deposit will not be refunded.</li>
+                        <li>In making plans for flowers and decorating,Please use 3M non-stick strips or easily removable tape and hooks only. </li>
+                        <li>Nails or any product. That would leave a permanent mark are prohibited</li>
+                        <li>Glitter or confetti are not permitted</li>
+                        <li>The church is not responsible for lost items</li>
+                    </ul>
+
+                    <p class="mb-5">If no damages or infringements occur, the damage deposit check will be returned to you within two weeks from the date of the ceremony.</p>
+
+                    <p class="mb-3">All personal items, food, beverages, and decorations must be removed from the church no later than 9 a.m. the day after the ceremony.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="aboutthree">
+        <div class="container">
+            <div class="row justify-content-center mb-4">
+                <div class="col-lg-12 text-left">
+                    <h2 class="lg-title mb-2 pb-3">Please note</h2>
+                    <p class="mb-5">A wedding held in our church is, first and foremost, a Christian worship service meant to bring honor to God.   We ask the planning of your ceremony, the music, the decorations, the attire and the behavior the wedding party and guests remain consistent with our Christian faith.</p>
+                    <p class="mb-5">It is our desire that your wedding ceremony be a meaningful and joyful experience. Thank You for allowing us to play a part. May it be a great start to an even greater marriage. God's blessings to you in Christ.</p>
+                    <p class="mb-5">You may have access to decorate the church the day prior to the ceremony.    Please notify ________ to gain access to the church.</p>
+                    <p class="mb-3">I acknowledge that I have read this page___________________________</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- FOOTER
     ================================================== -->
